@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gabriel Pack - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Gabe Pack
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          leonard98_00@yahoo.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          (405) 301-5200
+
+        </div>
+        </div>
+        <div class="topdiv">
+
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://www.thoughtco.com/thmb/iaTlawmIMctKjvlKgsxnQymkSsc=/2122x1415/filters:no_upscale():max_bytes(150000):strip_icc()/Studying-56a945f83df78cf772a55e31.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Gabe Pack! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am student with IBM in the computer science class.  I enjoy studying front-end as well as back-end coding.  I have studied Python, SQL, PHP, and other courses.  I am excited about this opportunity!
+          </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="https://qwebmaster.com/wp-content/uploads/2015/12/php-logo-1000x1000.png"/>
+            <h6>PHP</h6>
+            <p>4 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="https://insidehpc.com/wp-content/uploads/2016/01/Python-logo-notext.svg_.png"/>
+            <h6>Python</h6>
+            <p>3 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="https://img.favpng.com/16/0/21/sql-server-logo-png-favpng-pXyDxFrAFhWQUeLq6SrgeND1g.jpg"/>
+            <h6>SQL</h6>
+            <p>2 years experience</p>
+          </div>
+
+
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Apple, Inc.</h3>
+            <ul>
+              <li>Created micro-chips for incoming data</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Interpreter website</h3>
+            <ul>
+              <li>Deployed national website for bilingual speakers as a reference resource for spanish speakers</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Floor app</h3>
+            <ul>
+              <li>Initialized an app you can use to match your floor with your wall.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Gabe is a very personable client of ours.  He is also committed to making the work place better with suggestions of how to make it better!  I am also honored to work with his team to start a new chapter on coding.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Gabriel with the creation of my website has been a lifesaver.  He helped me out tremendously when I was in a bind.  With our start-up company, he completed the website in a time manner and it looked great!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Gabe during the initial phase of our venture which needed Web development.
+           He is a committed resource who has in depth knowledge about the domain.
+          He will be an asset for any organization!
+          <span>&#8221;</span>
+        </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+        My app worked wonderfully where I was able to load all the information needed to show to my clients who were also wanted to invest in company and become a shareholder with a just a couple of meetings.  I could not have done it without Gabriel
+            <span>&#8221;</span>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation!></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
